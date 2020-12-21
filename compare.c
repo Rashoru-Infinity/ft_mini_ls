@@ -27,5 +27,5 @@ int		compare(t_dir elm1, t_dir elm2)
 		return (-1);
 	namelen = ft_strlen(elm1.name) >= ft_strlen(elm2.name) ?
 	ft_strlen(elm1.name) : ft_strlen(elm2.name);
-	return (ft_strncmp(elm2.name, elm1.name, namelen));
+	return (ft_strncmp(elm1.name, elm2.name, namelen));
 }
